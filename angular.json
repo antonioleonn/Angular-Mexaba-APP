@@ -6,7 +6,7 @@
     "basessqlserver": {
       "projectType": "application",
       "schematics": {},
-      "root": "",
+      "root": "src",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
@@ -63,7 +63,10 @@
               "browserTarget": "basessqlserver:build:production"
             },
             "development": {
-              "browserTarget": "basessqlserver:build:development"
+              "browserTarget": "basessqlserver:build:development",
+              "ssl": true,
+              "sslKey": "server.key",
+              "sslCert": "server.crt"
             }
           },
           "defaultConfiguration": "development"
@@ -94,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e076a933-24f7-46c6-a5dc-9168b751e787"
   }
 }

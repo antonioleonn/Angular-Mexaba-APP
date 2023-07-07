@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'basessqlserver';
+  // Aquí puedes definir propiedades y lógica relacionada con el panel de control
+
+  constructor() {
+    // Código de inicialización o configuración inicial del panel de control
+  }
 }

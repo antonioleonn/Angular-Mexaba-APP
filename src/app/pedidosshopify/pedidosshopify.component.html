@@ -1,0 +1,27 @@
+<div x-data="exportTable">
+    <div x-data="basic">
+        <div class="panel">
+            <h5 class="text-lg font-semibold dark:text-white-light">Pedidos Shopify</h5>
+
+
+            <table id="myTable" class="table-hover whitespace-nowrap">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Fecha</th>
+                        <th>Cliente</th>
+                        <!-- Otros encabezados de columna -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pedido of pedidos">
+                        <td>{{ pedido.id }}</td>
+                        <td>{{ pedido.created_at }}</td>
+                        <td>{{ pedido.customer.name }}</td>
+                        <!-- Otros datos de cada pedido -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
